@@ -4,7 +4,10 @@ namespace dz
     {
         static void Main(string[] args)
         {
-            int a, b, c, d;
+            int a = 0;
+            int b = 0;
+            int c = 0; 
+            int d = 0;
             try
             {
                 Console.WriteLine("Ввeди число:");
