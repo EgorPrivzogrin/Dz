@@ -1,17 +1,26 @@
-﻿namespace dz
+namespace dz
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ввeди число:");
-            string? a = Console.ReadLine();
-            Console.WriteLine("Ввeди число:");
-            string? b = Console.ReadLine();
-            Console.WriteLine("Ввeди число:");
-            string? c = Console.ReadLine();
-            Console.WriteLine("Ввeди число:");
-            string? d = Console.ReadLine();
+            int a, b, c, d;
+            try
+            {
+                Console.WriteLine("Ввeди число:");
+                a = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ввeди число:");
+                b = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ввeди число:");
+                c = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ввeди число:");
+                d = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Вы ввели не число");
+                return;
+            }
             Console.WriteLine($"{a} {b} {c} {d}");
         }
     }
